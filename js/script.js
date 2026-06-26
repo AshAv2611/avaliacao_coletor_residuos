@@ -20,4 +20,16 @@ formDados.addEventListener('submit', (evt)=>{
         formDados.reset()
     }
 
+    //Criando a função para adicionar os construtores
+    const addColetor = (objColetor) =>{
+        coletor.push(objColetor)
+    }
+
+    //Criando a função para que os coletores tenham suas descrições exibidas
+    const listColetor()=>{
+        coletor.forEach(elem,i => {
+            
+        });
+    }
+
 })
