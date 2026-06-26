@@ -12,7 +12,7 @@ formDados.addEventListener('submit', (evt)=>{
 
     const coletor = {
         descricao: (form_dados.get('descricao')),
-        quantidade: (form_dados.get('descricao'))
+        quantidade: (form_dados.get('quantidade'))
         
         addColetor(coletor)
         listColeor()
