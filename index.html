@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coletor de Resíduos</title>
+    <link rel="stylesheet" href="style.css">
     <script src="js/script.js" type="module" defer></script>
 </head>
 <body>
 
     <div id="geral">
         <form id="formulario">
+            <h1 style=" padding: 15%;">Coleta de Resíduos</h1>
+            <img src="imagens/coletores.png" alt="">
             <h3>Insira os dados abaixo:</h3>
 
             <label for="descricao"> Nome da empresa: </label><br>
-            <input type="text" name="descricao" id="descricao"><br>
+            <input type="text" name="descricao" id="descricao" required><br>
 
-            <br><label for="quantidade"> Quantidade recolhida: </label><br>
-            <input type="text" name="quantidade" id="quantidade"><br>
+            <br><label for="quantidade"> Tonelada recolhida: </label><br>
+            <input type="text" name="quantidade" id="quantidade" required><br>
 
-           <br><button type="submit">Enviar</button>
+           <br><button class="submit" type="submit">Enviar</button>
 
             
 

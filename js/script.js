@@ -20,7 +20,7 @@ formDados.addEventListener('submit', (evt) => {
     }
 
     addColetor(coletor)
-    listColeor()
+    listColetor()
 
     formDados.reset()
 })
@@ -31,16 +31,25 @@ const addColetor = (objColetor) => {
 }
 
 //Criando a função para que os coletores tenham suas descrições exibidas
-const listColetor = () => {
-    coletor.forEach(elem => {
+const listColetor = () =>{
+    divResultado.innerHTML = ''
+    coletor.forEach((elem,i) => {
         const recebido = Receber(elem)
         const premio = valorPremio(elem)
+        const valorTotal = Number(recebido + premio)
 
-        divResultado.innerHTML +=
-            `A empresa ${elem.descricao} 
-            coletou ${elem.quantidade} 
-            de resíduos e o valor recebido foi de ${recebido} e ${premio}`
+        
+        
+        divResultado.innerHTML += 
+            ` <div class= 'item-coletor'> 
+            Empresa: ${elem.descricao} |
+            Quantidade recolhida: ${elem.quantidade} |
+            Valor recebido: R$ ${recebido} |
+            Valor do prêmio: R$ ${premio} |
+            Valor total: ${valorTotal} `
 
+    
     });
+
 }
 

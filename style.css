@@ -1,0 +1,57 @@
+#geral{
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(141, 199, 129);
+    width: 450px;
+    min-height: 450px;
+    border-radius: 8px;
+}
+img{
+   width: 50%;
+   padding-left: 25%;
+}
+
+form{
+    background-color: #f0f8ff;
+    padding: 20px;
+    margin: 20px 0px;
+    width: 400px;
+    border-radius: 8px;
+}
+
+label{
+    display: block;
+    margin:10px 0px;
+}
+
+input{
+    width: 380px;
+    height: 30px;
+}
+
+label{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.submit{
+    width: 400px;
+    height: 50px;
+    background-color: rgb(242, 255, 239) ;
+    border-radius: 10px;
+    
+}
+
+.submit:hover{
+    background-color: rgb(148, 214, 148);
+}
+
+.item-coletor{
+    text-decoration: aliceblue;
+    margin: 20px 0px;
+    padding: 5px;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+}
+
+
